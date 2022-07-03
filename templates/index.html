@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OUTBREAK DETECTION</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<center>
+      <h1>OUTBREAK DETECTION</h1>
+<form action="./predict" method="POST">
+    <table>
+        <tr>
+            <td><label for="Avghumidity">AvgHumidity</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="Avghumidity" placeholder="Enter AvgHumidity"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Rainfall">Rainfall</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="Rainfall" placeholder="Enter Rainfall"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="positive">Positive</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="Positive" placeholder="Enter Positive"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="pf">PF</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="pf" placeholder="Enter pf"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><input id="btn" type="submit" value="Predict" /></td>
+        </tr>
+    </table>
+    <p>Prediction:{{pred}}</p>
+</form>
+</center>
+</body>
+</html>
